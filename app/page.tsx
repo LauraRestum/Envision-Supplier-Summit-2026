@@ -12,20 +12,34 @@ export default function Home() {
           Building partnerships that strengthen supply chains and drive our
           shared mission forward.
         </p>
-        <a href="#agenda" className="btn-primary">
-          View Agenda
-        </a>
+        <div className="hero-actions">
+          <a href="#agenda" className="btn-primary">
+            View Agenda
+          </a>
+          <a
+            href="https://supplier-summit-2026.vercel.app"
+            className="btn-secondary"
+          >
+            RSVP Now
+          </a>
+        </div>
       </section>
 
       {/* Agenda */}
       <section className="section" id="agenda">
         <h2>Agenda at a Glance</h2>
+        <p className="section-subtitle">
+          Two days of strategic sessions, facility tours, and meaningful
+          connection — all designed to strengthen our partnership.
+        </p>
         {mainSchedule.map((day) => (
-          <div key={day.date} style={{ marginBottom: "2rem" }}>
-            <h3 style={{ marginBottom: "0.25rem" }}>
-              {day.day} · {day.date}
-            </h3>
-            <p style={{ marginBottom: "1rem", opacity: 0.75 }}>
+          <div key={day.date} className="day-block">
+            <div className="day-header">
+              <h3>
+                {day.day} · {day.date}
+              </h3>
+            </div>
+            <p className="day-venue">
               {day.venue} — {day.address}
             </p>
             <div className="agenda-grid">
@@ -33,14 +47,12 @@ export default function Home() {
                 <div key={i} className="agenda-item">
                   <span className="agenda-time">{session.time}</span>
                   <div>
-                    <strong>{session.title}</strong>
+                    <div className="agenda-title">{session.title}</div>
                     {session.location && (
-                      <p style={{ margin: "0.25rem 0 0", opacity: 0.7, fontSize: "0.875rem" }}>
-                        {session.location}
-                      </p>
+                      <p className="agenda-location">{session.location}</p>
                     )}
                     {session.description && (
-                      <p style={{ margin: "0.5rem 0 0", fontSize: "0.875rem" }}>
+                      <p className="agenda-description">
                         {session.description}
                       </p>
                     )}
@@ -53,19 +65,19 @@ export default function Home() {
       </section>
 
       {/* Beyond the Summit */}
-      <section className="section" style={{ paddingTop: 0 }}>
+      <section className="beyond-section">
         <h2>{beyondTheSummit.title}</h2>
-        <p style={{ marginBottom: "0.5rem", fontWeight: 600 }}>{beyondTheSummit.subtitle}</p>
-        <p style={{ marginBottom: "2rem" }}>{beyondTheSummit.intro}</p>
+        <p className="beyond-subtitle">{beyondTheSummit.subtitle}</p>
+        <p className="beyond-intro">{beyondTheSummit.intro}</p>
         <div className="agenda-grid">
           {beyondTheSummit.events.map((event) => (
-            <div key={event.title} className="agenda-item" style={{ flexDirection: "column", alignItems: "flex-start", gap: "0.5rem" }}>
-              <strong style={{ fontSize: "1.05rem" }}>{event.title}</strong>
-              <p style={{ margin: 0, opacity: 0.75, fontSize: "0.875rem" }}>
+            <div key={event.title} className="beyond-card">
+              <div className="beyond-card-title">{event.title}</div>
+              <p className="beyond-card-venue">
                 {event.venue} — {event.address}
               </p>
-              <p style={{ margin: 0, fontSize: "0.875rem" }}>{event.description}</p>
-              <ul style={{ margin: "0.5rem 0 0", paddingLeft: "1.25rem", fontSize: "0.875rem" }}>
+              <p className="beyond-card-description">{event.description}</p>
+              <ul className="beyond-card-sessions">
                 {event.sessions.map((s, i) => (
                   <li key={i}>
                     <strong>{s.time}</strong> – {s.title}
@@ -76,7 +88,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p style={{ marginTop: "1.5rem", fontWeight: 600 }}>
+        <p className="beyond-registration">
           {beyondTheSummit.registrationNote}{" "}
           <a href={`mailto:${beyondTheSummit.registrationContact}`}>
             {beyondTheSummit.registrationContact}
@@ -84,11 +96,27 @@ export default function Home() {
         </p>
       </section>
 
+      {/* RSVP CTA */}
+      <section className="rsvp-banner">
+        <h2>Ready to Join Us?</h2>
+        <p>
+          Confirm your attendance for the Envision Supplier Summit 2026 in
+          Dallas, TX.
+        </p>
+        <a
+          href="https://supplier-summit-2026.vercel.app"
+          className="btn-primary"
+        >
+          RSVP Now
+        </a>
+      </section>
+
       {/* Agent Chat */}
       <section className="chat-section">
         <h2>Ask Our Summit Assistant</h2>
         <p className="subtitle">
-          Have questions about the agenda, logistics, or how to prepare? Ask below.
+          Have questions about the agenda, logistics, or how to prepare? Ask
+          below.
         </p>
         <div className="chat-container">
           <AgentWidget />
@@ -97,7 +125,16 @@ export default function Home() {
 
       {/* Footer */}
       <footer>
-        <p>© 2026 Envision Inc. · Supplier Summit · Dallas, TX · EnvisionUS.com</p>
+        <p>
+          © 2026 Envision Inc. · Supplier Summit · Dallas, TX ·{" "}
+          <a
+            href="https://www.envisionus.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            EnvisionUS.com
+          </a>
+        </p>
       </footer>
     </main>
   );
