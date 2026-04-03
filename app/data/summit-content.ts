@@ -112,7 +112,7 @@ export const day1Hero = {
 export const day1Speakers = {
   eyebrow: "Opening Session · 2:00–3:30 p.m.",
   heading: "The Leaders You\u2019ll\nHear From Directly.",
-  body: "Attendees will gain exclusive access to Envision\u2019s full senior leadership team — not intermediaries, not a summary. Hotel Dax · 14315 Midway Road, Addison TX 75001",
+  body: "An opportunity to connect directly with Envision leadership in an open, conversational setting. Real dialogue, shared insight, and a closer look at what\u2019s taking shape ahead.",
   location: {
     name: "Hotel Dax",
     address: "14315 Midway Road, Addison, TX 75001",
@@ -131,7 +131,7 @@ export const day1Timeline = {
       time: "2:00 – 3:30 p.m.",
       title: "Leadership Introductions & Opening Remarks",
       description:
-        "Envision\u2019s full executive team presents directly to supplier partners. Strategic direction, growth outlook, and the future of our partnership — unfiltered and on the record. Come with questions. Leave with clarity.",
+        "Envision leadership will share a forward-looking view of where we\u2019re headed and how we continue to grow together. A look at priorities, progress, and what\u2019s taking shape ahead. Come with questions. Leave with clarity.",
       location: "Hotel Dax · Addison TX",
     },
     {
@@ -225,6 +225,9 @@ export const day2Agenda = {
       description:
         "Focused time with Envision\u2019s supply chain and operations leaders. Your agenda, your priorities. Discuss current work, explore new opportunities, and align on how we work better together.",
       location: "2nd Floor Administrative Lobby",
+      focusTopics: ["Alignment", "Efficiency", "Scalability", "Reliability", "Growth"],
+      rsvpPrompt: "Have a question in mind? RSVP and let us know.",
+      rsvpHref: "https://supplier-summit-2026.vercel.app",
     },
     {
       number: 3,
