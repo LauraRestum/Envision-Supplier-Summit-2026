@@ -88,9 +88,15 @@ claude-code "audit all HTML files for brand compliance"
 
 EOF
 
+# Clone ui-ux-pro-max-skill for page building
+if [ ! -d "ui-ux-pro-max-skill" ]; then
+  gh repo clone LauraRestum/ui-ux-pro-max-skill ui-ux-pro-max-skill
+fi
+
 echo ""
 echo "✓ Repository structure created"
 echo "✓ Git initialized"
+echo "✓ ui-ux-pro-max-skill cloned"
 echo ""
 echo "Next steps:"
 echo "1. Copy your HTML file into landing-pages/"
