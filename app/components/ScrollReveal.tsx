@@ -1,63 +1,67 @@
 "use client";
 
-import { useEffect, useRef, useCallback } from "react";
+import { useEffect, useRef } from "react";
 
-export default function ScrollReveal() {
-  const heroRef = useRef<HTMLElement | null>(null);
-  const rafId = useRef<number>(0);
-
-  const handleScroll = useCallback(() => {
-    if (rafId.current) return;
-    rafId.current = requestAnimationFrame(() => {
-      rafId.current = 0;
-      if (!heroRef.current) return;
-      const inner = heroRef.current.querySelector<HTMLElement>(".hero-inner");
-      if (!inner) return;
-
-      const rect = heroRef.current.getBoundingClientRect();
-      const visible = rect.bottom > 0;
-      if (!visible) return;
-
-      // Subtle parallax: content drifts up slower than scroll
-      const scrolled = -rect.top;
-      const parallax = scrolled * 0.15;
-      const opacity = Math.max(0, 1 - scrolled * 0.0012);
-      inner.style.transform = `translateY(${parallax}px)`;
-      inner.style.opacity = String(opacity);
-    });
-  }, []);
+export default function ScrollReveal({ activePage }: { activePage: string }) {
+  const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    // Scroll reveal observer
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      },
-      { threshold: 0.08, rootMargin: "0px 0px -60px 0px" }
-    );
+    // Disconnect previous observer
+    observerRef.current?.disconnect();
 
-    document.querySelectorAll(".rv").forEach((el) => observer.observe(el));
-
-    // Hero parallax
-    heroRef.current = document.querySelector(".hero");
-    const prefersReduced = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-
-    if (heroRef.current && !prefersReduced) {
-      window.addEventListener("scroll", handleScroll, { passive: true });
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReduced) {
+      // Show everything immediately
+      document.querySelectorAll(".rv").forEach((el) => el.classList.add("on"));
+      return;
     }
 
-    return () => {
-      observer.disconnect();
-      window.removeEventListener("scroll", handleScroll);
-      if (rafId.current) cancelAnimationFrame(rafId.current);
+    // Small delay to let page render after toggle
+    const timer = setTimeout(() => {
+      const activeDivs = document.querySelectorAll(".page.active .rv");
+
+      // Reset reveals on newly active page
+      activeDivs.forEach((el) => el.classList.remove("on"));
+
+      const obs = new IntersectionObserver(
+        (entries) => {
+          requestAnimationFrame(() => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("on");
+                obs.unobserve(entry.target);
+              }
+            });
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+      );
+
+      activeDivs.forEach((el) => obs.observe(el));
+      observerRef.current = obs;
+    }, 100);
+
+    // Parallax for day hero backgrounds
+    const handleScroll = () => {
+      const y = window.scrollY;
+      const d1bg = document.getElementById("d1bg");
+      const d2bg = document.getElementById("d2bg");
+      if (d1bg && activePage === "day1") {
+        d1bg.style.transform = `translateY(${Math.round(y * 0.15)}px)`;
+      }
+      if (d2bg && activePage === "day2") {
+        d2bg.style.transform = `translateY(${Math.round(y * 0.15)}px)`;
+      }
     };
-  }, [handleScroll]);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      clearTimeout(timer);
+      observerRef.current?.disconnect();
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [activePage]);
 
   return null;
 }
