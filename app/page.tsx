@@ -1,4 +1,5 @@
 import AgentWidget from "./components/AgentWidget";
+import { mainSchedule, beyondTheSummit } from "./data/summit-schedule";
 
 export default function Home() {
   return (
@@ -6,52 +7,81 @@ export default function Home() {
       {/* Hero */}
       <section className="hero">
         <h1>Envision Supplier Summit 2026</h1>
-        <p className="date">September 15–17, 2026 · Chicago, IL</p>
+        <p className="date">April 22–23, 2026 · Dallas, TX</p>
         <p>
-          Where packaging innovation meets strategic partnership. Join Envision
-          and our supplier network for three days of insights, collaboration,
-          and capability-building.
+          Building partnerships that strengthen supply chains and drive our
+          shared mission forward.
         </p>
-        <a href="#register" className="btn-primary">
-          Register Now
+        <a href="#agenda" className="btn-primary">
+          View Agenda
         </a>
       </section>
 
       {/* Agenda */}
-      <section className="section">
-        <h2>Agenda Highlights</h2>
-        <div className="agenda-grid">
-          {[
-            { time: "Day 1", title: "Packaging Ecosystem Overview & Keynote" },
-            { time: "Day 2", title: "APS Capabilities Deep Dive & Partner Sessions" },
-            { time: "Day 2", title: "Breakouts: Sustainability, Innovation, Supply Chain" },
-            { time: "Day 3", title: "Strategic Planning Workshops & Closing" },
-          ].map((item, i) => (
-            <div key={i} className="agenda-item">
-              <span className="agenda-time">{item.time}</span>
-              <span>{item.title}</span>
+      <section className="section" id="agenda">
+        <h2>Agenda at a Glance</h2>
+        {mainSchedule.map((day) => (
+          <div key={day.date} style={{ marginBottom: "2rem" }}>
+            <h3 style={{ marginBottom: "0.25rem" }}>
+              {day.day} · {day.date}
+            </h3>
+            <p style={{ marginBottom: "1rem", opacity: 0.75 }}>
+              {day.venue} — {day.address}
+            </p>
+            <div className="agenda-grid">
+              {day.sessions.map((session, i) => (
+                <div key={i} className="agenda-item">
+                  <span className="agenda-time">{session.time}</span>
+                  <div>
+                    <strong>{session.title}</strong>
+                    {session.location && (
+                      <p style={{ margin: "0.25rem 0 0", opacity: 0.7, fontSize: "0.875rem" }}>
+                        {session.location}
+                      </p>
+                    )}
+                    {session.description && (
+                      <p style={{ margin: "0.5rem 0 0", fontSize: "0.875rem" }}>
+                        {session.description}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </section>
 
-      {/* Speakers */}
+      {/* Beyond the Summit */}
       <section className="section" style={{ paddingTop: 0 }}>
-        <h2>Featured Speakers</h2>
-        <div className="speakers-grid">
-          {[
-            { name: "Sarah Chen", role: "VP Supply Chain, Envision" },
-            { name: "Marcus Reid", role: "Director, Packaging Innovation" },
-            { name: "Priya Nair", role: "Head of Sustainability" },
-            { name: "Tom Vasquez", role: "APS Capabilities Lead" },
-          ].map((s) => (
-            <div key={s.name} className="speaker-card">
-              <div className="avatar">{s.name[0]}</div>
-              <h3>{s.name}</h3>
-              <p>{s.role}</p>
+        <h2>{beyondTheSummit.title}</h2>
+        <p style={{ marginBottom: "0.5rem", fontWeight: 600 }}>{beyondTheSummit.subtitle}</p>
+        <p style={{ marginBottom: "2rem" }}>{beyondTheSummit.intro}</p>
+        <div className="agenda-grid">
+          {beyondTheSummit.events.map((event) => (
+            <div key={event.title} className="agenda-item" style={{ flexDirection: "column", alignItems: "flex-start", gap: "0.5rem" }}>
+              <strong style={{ fontSize: "1.05rem" }}>{event.title}</strong>
+              <p style={{ margin: 0, opacity: 0.75, fontSize: "0.875rem" }}>
+                {event.venue} — {event.address}
+              </p>
+              <p style={{ margin: 0, fontSize: "0.875rem" }}>{event.description}</p>
+              <ul style={{ margin: "0.5rem 0 0", paddingLeft: "1.25rem", fontSize: "0.875rem" }}>
+                {event.sessions.map((s, i) => (
+                  <li key={i}>
+                    <strong>{s.time}</strong> – {s.title}
+                    {s.description ? `: ${s.description}` : ""}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
+        <p style={{ marginTop: "1.5rem", fontWeight: 600 }}>
+          {beyondTheSummit.registrationNote}{" "}
+          <a href={`mailto:${beyondTheSummit.registrationContact}`}>
+            {beyondTheSummit.registrationContact}
+          </a>
+        </p>
       </section>
 
       {/* Agent Chat */}
@@ -67,7 +97,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer>
-        <p>© 2026 Envision Inc. · Envision Supplier Summit · Chicago, IL</p>
+        <p>© 2026 Envision Inc. · Supplier Summit · Dallas, TX · EnvisionUS.com</p>
       </footer>
     </main>
   );
