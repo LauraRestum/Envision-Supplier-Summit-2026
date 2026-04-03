@@ -1,0 +1,171 @@
+:root {
+  --navy: #003087;
+  --green: #78BE21;
+  --white: #ffffff;
+  --light-gray: #f5f5f5;
+  --text: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat, 'Segoe UI', sans-serif;
+  color: var(--text);
+  background: var(--white);
+}
+
+.hero {
+  background: var(--navy);
+  color: var(--white);
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.hero .date {
+  font-size: 1.25rem;
+  color: var(--green);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  max-width: 640px;
+  margin: 0 auto 40px;
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background: var(--green);
+  color: var(--navy);
+  padding: 14px 32px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.section {
+  padding: 64px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 32px;
+}
+
+.agenda-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.agenda-item {
+  display: flex;
+  gap: 24px;
+  padding: 20px;
+  border-left: 4px solid var(--green);
+  background: var(--light-gray);
+  border-radius: 0 4px 4px 0;
+}
+
+.agenda-time {
+  font-weight: 700;
+  color: var(--navy);
+  min-width: 80px;
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.speaker-card {
+  background: var(--light-gray);
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+}
+
+.speaker-card .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.speaker-card h3 {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.speaker-card p {
+  font-size: 0.875rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+.chat-section {
+  background: var(--light-gray);
+  padding: 64px 40px;
+}
+
+.chat-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.chat-section .subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.chat-container {
+  max-width: 760px;
+  margin: 0 auto;
+  height: 520px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+footer {
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+  padding: 32px 40px;
+  font-size: 0.875rem;
+  opacity: 0.9;
+}

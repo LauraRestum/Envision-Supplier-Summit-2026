@@ -1,0 +1,26 @@
+{
+  "name": "envision-supplier-summit-2026",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@21st-sdk/nextjs": "latest",
+    "@21st-sdk/react": "latest",
+    "@ai-sdk/react": "latest",
+    "ai": "latest",
+    "next": "15",
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}
