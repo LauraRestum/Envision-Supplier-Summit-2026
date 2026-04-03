@@ -148,13 +148,10 @@ button { font-family:var(--F); cursor:pointer; border:none; background:none; col
 }
 .hero-bg {
   position:absolute; inset:-8% -12%;
-  background-size:cover; background-position:center 45%;
+  width:124%; height:116%;
+  object-fit:cover; object-position:center 45%;
   animation:hzoom 30s cubic-bezier(.25,.46,.45,.94) forwards;
   will-change:transform;
-}
-.hero-bg.placeholder {
-  background:linear-gradient(135deg, #001a3d 0%, var(--bg) 50%, #002255 100%);
-  animation:none;
 }
 .hero-ov1 {
   position:absolute; inset:0;
@@ -366,11 +363,9 @@ button { font-family:var(--F); cursor:pointer; border:none; background:none; col
 }
 .dh-bg {
   position:absolute; inset:0;
-  background-size:cover; background-position:center;
+  width:100%; height:100%;
+  object-fit:cover; object-position:center;
   will-change:transform;
-}
-.dh-bg.placeholder {
-  background:linear-gradient(135deg, var(--bg3) 0%, var(--bg) 50%, var(--navy) 100%);
 }
 .dh-ov {
   position:absolute; inset:0;

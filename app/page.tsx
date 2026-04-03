@@ -29,7 +29,7 @@ export default function Home() {
       <div className={`page${activePage === "home" ? " active" : ""}`}>
         {/* Hero */}
         <section className="hero">
-          <div className="hero-bg placeholder" />
+          <img className="hero-bg" src="/images/hero-bg.png" alt="" />
           <div className="hero-ov1" />
           <div className="hero-ov2" />
           <HeroParticles />
@@ -98,9 +98,7 @@ export default function Home() {
               </div>
             </div>
             <div className="split-img rv d2">
-              <div className="img-placeholder" style={{ aspectRatio: "4/3" }}>
-                Envision Dallas
-              </div>
+              <img src={C.direction.image} alt={C.direction.imageAlt} style={{ aspectRatio: "4/3", objectFit: "cover", width: "100%", borderRadius: 18 }} />
               <div className="split-img-border" />
             </div>
           </div>
@@ -117,6 +115,7 @@ export default function Home() {
                 key={s.name}
                 name={s.name}
                 role={s.role}
+                imageSrc={s.image}
                 objectPosition={s.objectPosition}
                 className={`rv d${i + 1}`}
               />
@@ -193,7 +192,7 @@ export default function Home() {
       <div className={`page${activePage === "day1" ? " active" : ""}`}>
         {/* Hero */}
         <div className="dh">
-          <div className="dh-bg placeholder" id="d1bg" />
+          <img className="dh-bg" id="d1bg" src={C.day1Hero.image} alt="" />
           <div className="dh-ov" />
           <div className="dh-mesh" />
           <div className="dh-body">
@@ -214,6 +213,7 @@ export default function Home() {
                 key={s.name}
                 name={s.name}
                 role={s.role}
+                imageSrc={s.image}
                 objectPosition={s.objectPosition}
                 className={`rv d${i + 1}`}
               />
@@ -247,6 +247,7 @@ export default function Home() {
           <h2 className="sec-h rv d1" style={{ whiteSpace: "pre-line" }}>{C.day1Evening.heading}</h2>
 
           <PhotoBanner
+            imageSrc={C.day1Evening.banner.image}
             imageAlt={C.day1Evening.banner.imageAlt}
             badge={C.day1Evening.banner.badge}
             heading={C.day1Evening.banner.heading}
@@ -300,7 +301,7 @@ export default function Home() {
       <div className={`page${activePage === "day2" ? " active" : ""}`}>
         {/* Hero */}
         <div className="dh">
-          <div className="dh-bg placeholder" id="d2bg" />
+          <img className="dh-bg" id="d2bg" src={C.day2Hero.image} alt="" />
           <div className="dh-ov" />
           <div className="dh-mesh" />
           <div className="dh-body">
@@ -326,6 +327,7 @@ export default function Home() {
           <h2 className="sec-h rv d1" style={{ whiteSpace: "pre-line" }}>{C.day2PlantTour.heading}</h2>
 
           <PhotoBanner
+            imageSrc={C.day2PlantTour.banner.image}
             imageAlt={C.day2PlantTour.banner.imageAlt}
             badge={C.day2PlantTour.banner.badge}
             heading={C.day2PlantTour.banner.heading}
@@ -350,6 +352,7 @@ export default function Home() {
           <h2 className="sec-h rv d1" style={{ whiteSpace: "pre-line" }}>{C.day2Golf.heading}</h2>
 
           <PhotoBanner
+            imageSrc={C.day2Golf.banner.image}
             imageAlt={C.day2Golf.banner.imageAlt}
             badge={C.day2Golf.banner.badge}
             heading={C.day2Golf.banner.heading}
