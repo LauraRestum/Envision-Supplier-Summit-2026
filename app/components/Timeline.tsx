@@ -5,6 +5,9 @@ interface TimelineItem {
   description: string;
   location?: string;
   link?: { label: string; href: string };
+  focusTopics?: string[];
+  rsvpPrompt?: string;
+  rsvpHref?: string;
 }
 
 export default function Timeline({
@@ -25,6 +28,24 @@ export default function Timeline({
           <p className="tl-desc">{item.description}</p>
           {item.location && (
             <span className="tl-loc">{item.location}</span>
+          )}
+          {item.focusTopics && item.focusTopics.length > 0 && (
+            <div className="tl-focus-block">
+              <div className="tl-focus-label">Focused Conversations Around</div>
+              <div className="tl-focus-topics">
+                {item.focusTopics.map((t, j) => (
+                  <span key={j} className="tl-focus-tag">{t}</span>
+                ))}
+              </div>
+              {item.rsvpPrompt && (
+                <p className="tl-rsvp-prompt">{item.rsvpPrompt}</p>
+              )}
+              {item.rsvpHref && (
+                <a className="btn-o tl-rsvp-btn" href={item.rsvpHref}>
+                  RSVP Now →
+                </a>
+              )}
+            </div>
           )}
           {item.link && (
             <a className="tl-link" href={item.link.href}>
