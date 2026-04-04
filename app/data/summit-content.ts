@@ -141,7 +141,7 @@ export const day1Timeline = {
       description:
         "An evening of friendly competition and meaningful contribution at Champions Social Club. Benefits Envision\u2019s Dallas Foundation. Chef-curated hors d\u2019oeuvres and two drinks included. Capped at 150 players.",
       location: "Champions Social Club · 17776 Dallas Pkwy, Dallas TX",
-      link: { label: "Register →", href: "https://supplier-summit-2026.vercel.app" },
+      link: { label: "Register →", href: "https://pro.gofundme.com/event/envision-dallas-poker-tournament/e763479/register/new/select-tickets" },
     },
     {
       number: 3,
@@ -162,7 +162,7 @@ export const day1Evening = {
     badge: "Optional Evening Event",
     heading: "ALL-IN Poker\nTournament",
     subtitle: "A relaxed evening of competition and connection — benefiting Envision\u2019s Dallas Foundation",
-    cta: { label: "Register Now →", href: "https://supplier-summit-2026.vercel.app" },
+    cta: { label: "Register Now →", href: "https://pro.gofundme.com/event/envision-dallas-poker-tournament/e763479/register/new/select-tickets" },
   },
   details: [
     { label: "Venue", value: "Champions Social Club" },
@@ -244,7 +244,7 @@ export const day2Agenda = {
       description:
         "7th Annual Fore Vision Golf Tournament at Cowboys Golf Club, Grapevine TX. Registration and lunch begin at noon before the shotgun start.",
       location: "Cowboys Golf Club · 1600 Fairway Dr., Grapevine TX",
-      link: { label: "Register →", href: "https://supplier-summit-2026.vercel.app" },
+      link: { label: "Register →", href: "https://www.envisionus.com/golf-fore-vision-dallas" },
     },
     {
       number: 5,
@@ -290,7 +290,7 @@ export const day2Golf = {
     badge: "7th Annual · Optional",
     heading: "Fore Vision\nGolf Tournament",
     subtitle: "Benefiting Envision\u2019s Dallas Foundation",
-    cta: { label: "Register Now →", href: "https://supplier-summit-2026.vercel.app" },
+    cta: { label: "Register Now →", href: "https://www.envisionus.com/golf-fore-vision-dallas" },
   },
   details: [
     { label: "Venue", value: "Cowboys Golf Club" },
@@ -309,8 +309,8 @@ export const day2Closing = {
 export const footer = {
   copyright: "© 2026 Envision. All rights reserved.",
   contactEmail: "Patrick.Tuttle@envisionus.com",
-  golfLink: "https://supplier-summit-2026.vercel.app",
-  pokerLink: "https://supplier-summit-2026.vercel.app",
+  golfLink: "https://www.envisionus.com/golf-fore-vision-dallas",
+  pokerLink: "https://pro.gofundme.com/event/envision-dallas-poker-tournament/e763479/register/new/select-tickets",
 };
 
 export const ticker = [
