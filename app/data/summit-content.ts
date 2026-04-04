@@ -276,7 +276,7 @@ export const day2PlantTour = {
   },
   location: {
     name: "Envision, Dallas Campus",
-    address: "1801 Valley View Lane, Farmers Branch, TX 75234",
+    address: "1801 Valley View Ln, Farmers Branch, TX 75234",
     phone: "(214) 821-2375",
   },
 };

@@ -217,8 +217,16 @@ export default function Home() {
         {/* Speakers */}
         <section className="s s-mid" id="d1-speakers">
           <div className="sec-eye rv">{C.day1Speakers.eyebrow}</div>
-          <h2 className="sec-h rv d1" style={{ whiteSpace: "pre-line" }}>The Leaders You&rsquo;ll{"\n"}Hear From Directly.</h2>
-          <p className="sec-sub rv d2">{C.day1Speakers.body}</p>
+          <div className="lc lc-context rv d1" style={{ marginBottom: 28 }}>
+            <div className="lc-ico">◆</div>
+            <div>
+              <div className="lc-lbl">Location</div>
+              <div className="lc-name">{C.day1Speakers.location.name}</div>
+              <div className="lc-addr">{C.day1Speakers.location.address} · {C.day1Speakers.location.phone}</div>
+            </div>
+          </div>
+          <h2 className="sec-h rv d2" style={{ whiteSpace: "pre-line" }}>The Leaders You&rsquo;ll{"\n"}Hear From Directly.</h2>
+          <p className="sec-sub rv d3">{C.day1Speakers.body}</p>
           <div className="spk-grid">
             {C.speakers.map((s, i) => (
               <SpeakerCard
@@ -326,8 +334,16 @@ export default function Home() {
         {/* Timeline */}
         <section className="s s-dark" id="d2-agenda">
           <div className="sec-eye rv">{C.day2Agenda.eyebrow}</div>
-          <h2 className="sec-h rv d1" style={{ whiteSpace: "pre-line" }}>{C.day2Agenda.heading}</h2>
-          <p className="sec-sub rv d2">{C.day2Agenda.body}</p>
+          <div className="lc lc-context rv d1" style={{ marginBottom: 28 }}>
+            <div className="lc-ico">◆</div>
+            <div>
+              <div className="lc-lbl">Location</div>
+              <div className="lc-name">{C.day2PlantTour.location.name}</div>
+              <div className="lc-addr">{C.day2PlantTour.location.address}</div>
+            </div>
+          </div>
+          <h2 className="sec-h rv d2" style={{ whiteSpace: "pre-line" }}>{C.day2Agenda.heading}</h2>
+          <p className="sec-sub rv d3">{C.day2Agenda.body}</p>
           <div style={{ marginTop: 56 }}>
             <Timeline dateLabel={C.day2Agenda.dateLabel} items={C.day2Agenda.items} />
           </div>
