@@ -316,7 +316,6 @@ export const footer = {
 export const ticker = [
   { type: "rsvp" as const, label: "RSVP Today", value: "", href: "https://supplier-summit-2026.vercel.app" },
   { type: "info" as const, label: "April 22–23, 2026", value: "Hotel Dax · Envision, Dallas Campus · Champions Social Club · Cowboys Golf Club", href: "https://supplier-summit-2026.vercel.app" },
-  { type: "email" as const, label: "Contact", value: "Patrick.Tuttle@envisionus.com", href: "mailto:Patrick.Tuttle@envisionus.com" },
 ];
 
 export const navAnchors = {
