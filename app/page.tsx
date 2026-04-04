@@ -5,7 +5,6 @@ import Nav from "./components/Nav";
 import Ticker from "./components/Ticker";
 import HeroParticles from "./components/HeroParticles";
 import ScrollReveal from "./components/ScrollReveal";
-import FloatingChat from "./components/FloatingChat";
 import Timeline from "./components/Timeline";
 import PhotoBanner from "./components/PhotoBanner";
 import SpeakerCard from "./components/SpeakerCard";
@@ -384,7 +383,6 @@ export default function Home() {
       </div>
 
       <Ticker />
-      <FloatingChat />
       <ScrollReveal activePage={activePage} />
     </>
   );
@@ -406,8 +404,8 @@ function Footer() {
       <div className="footer-copy">{C.footer.copyright}</div>
       <div className="footer-links">
         <a href={`mailto:${C.footer.contactEmail}`}>Contact</a>
-        <a href={C.footer.golfLink}>Golf</a>
-        <a href={C.footer.pokerLink}>Poker</a>
+        <a href={C.footer.golfLink} target="_blank" rel="noopener noreferrer">Golf</a>
+        <a href={C.footer.pokerLink} target="_blank" rel="noopener noreferrer">Poker</a>
       </div>
     </footer>
   );

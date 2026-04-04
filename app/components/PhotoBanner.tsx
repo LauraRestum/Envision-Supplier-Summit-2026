@@ -33,6 +33,8 @@ export default function PhotoBanner({
             <a
               className="btn-g"
               href={ctaHref}
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ marginTop: 20, fontSize: 10, padding: "13px 24px" }}
             >
               {ctaText}

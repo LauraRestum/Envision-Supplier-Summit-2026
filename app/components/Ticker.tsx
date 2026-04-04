@@ -6,15 +6,17 @@ function TickerItems() {
   return (
     <>
       {ticker.map((item, i) => (
-        <div key={i} className="ticker-item">
+        <a
+          key={i}
+          className="ticker-item"
+          href={item.href}
+          target={item.href.startsWith("mailto:") ? undefined : "_blank"}
+          rel={item.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+        >
           <span className="ticker-dot" />
-          <span>{item.label}</span>
-          {item.href ? (
-            <a href={item.href}>{item.value}</a>
-          ) : (
-            <span className="ticker-muted">{item.value}</span>
-          )}
-        </div>
+          <span className="ticker-label">{item.label}</span>
+          {item.value && <span className="ticker-muted">{item.value}</span>}
+        </a>
       ))}
     </>
   );

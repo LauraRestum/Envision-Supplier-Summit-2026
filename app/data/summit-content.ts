@@ -32,7 +32,7 @@ export const whyThisSummit = {
       number: "03",
       label: "See How We Work",
       description:
-        "Walk the floors of Envision Dallas and see exactly how your products and capabilities are integrated into our operation. Understanding our world makes our partnership stronger.",
+        "Walk the floors of the Envision, Dallas Campus and see exactly how your products and capabilities are integrated into our operation. Understanding our world makes our partnership stronger.",
     },
   ],
 };
@@ -43,7 +43,7 @@ export const direction = {
   body: "The 2026 Envision Supplier Summit is designed to strengthen our partnerships, align on strategic priorities, and identify new opportunities for collaboration and growth. Together, we will explore where the industry is heading and map out a bold vision for what we can build — side by side.",
   cta: { label: "Explore the Agenda →", href: "#agenda-glance" },
   image: "/images/envision-dallas.jpg",
-  imageAlt: "Envision Dallas",
+  imageAlt: "Envision, Dallas Campus",
 };
 
 export const speakers = [
@@ -85,7 +85,7 @@ export const agendaGlance = {
     label: "Thursday · April 23",
     title: "Day 2 — Hands-On Engagement",
     items: [
-      { time: "7:30 a.m.", title: "Continental Breakfast · Envision Dallas" },
+      { time: "7:30 a.m.", title: "Continental Breakfast · Envision, Dallas Campus" },
       { time: "8:00 – 11:00 a.m.", title: "One-on-One Supply Chain Meetings" },
       { time: "8:00 – 11:00 a.m.", title: "Plant Tours (hourly at 8, 9 & 10 a.m.)" },
       { time: "12:00 p.m.", title: "Fore Vision Golf Tournament · Cowboys Golf Club" },
@@ -139,7 +139,7 @@ export const day1Timeline = {
       time: "5:00 p.m. — Doors Open",
       title: "ALL-IN Poker Tournament",
       description:
-        "An evening of friendly competition and meaningful contribution at Champions Social Club. Benefits Envision Dallas. Chef-curated hors d\u2019oeuvres and two drinks included. Capped at 150 players.",
+        "An evening of friendly competition and meaningful contribution at Champions Social Club. Benefits Envision\u2019s Dallas Foundation. Chef-curated hors d\u2019oeuvres and two drinks included. Capped at 150 players.",
       location: "Champions Social Club · 17776 Dallas Pkwy, Dallas TX",
       link: { label: "Register →", href: "https://supplier-summit-2026.vercel.app" },
     },
@@ -161,7 +161,7 @@ export const day1Evening = {
     imageAlt: "Champions Social Club",
     badge: "Optional Evening Event",
     heading: "ALL-IN Poker\nTournament",
-    subtitle: "A relaxed evening of competition and connection — benefiting Envision Dallas",
+    subtitle: "A relaxed evening of competition and connection — benefiting Envision\u2019s Dallas Foundation",
     cta: { label: "Register Now →", href: "https://supplier-summit-2026.vercel.app" },
   },
   details: [
@@ -191,7 +191,7 @@ export const day1Evening = {
 
 export const day1Closing = {
   heading: "Day 2 Is Where\nIt Gets Personal.",
-  body: "One-on-one time with our supply chain leaders, a look inside Envision Dallas, and an afternoon on the course. Continue to Day 2 to see what\u2019s in store.",
+  body: "One-on-one time with our supply chain leaders, a look inside the Envision, Dallas Campus, and an afternoon on the course. Continue to Day 2 to see what\u2019s in store.",
   cta: { label: "Explore Day 2 →" },
 };
 
@@ -215,8 +215,8 @@ export const day2Agenda = {
       time: "7:30 – 9:30 a.m.",
       title: "Continental Breakfast",
       description:
-        "Start the day in the 2nd Floor Administrative Lobby at Envision Dallas before meetings and tours begin.",
-      location: "Envision Dallas · 2nd Floor Admin Lobby",
+        "Start the day in the 2nd Floor Administrative Lobby at the Envision, Dallas Campus before meetings and tours begin.",
+      location: "Envision, Dallas Campus · 2nd Floor Admin Lobby",
     },
     {
       number: 2,
@@ -232,9 +232,9 @@ export const day2Agenda = {
     {
       number: 3,
       time: "8:00 – 11:00 a.m.",
-      title: "Plant Tours — Envision Dallas",
+      title: "Plant Tours — Envision, Dallas Campus",
       description:
-        "Walk the floors of Envision\u2019s Dallas manufacturing and logistics facility. Tours depart hourly at 8:00, 9:00, and 10:00 a.m. See firsthand the operation you help support.",
+        "Walk the floors of the Envision, Dallas Campus manufacturing and logistics facility. Tours depart hourly at 8:00, 9:00, and 10:00 a.m. See firsthand the operation you help support.",
       location: "Departing from 2nd Floor Admin Lobby",
     },
     {
@@ -265,17 +265,17 @@ export const day2Agenda = {
 };
 
 export const day2PlantTour = {
-  eyebrow: "Plant Tour · Envision Dallas",
+  eyebrow: "Plant Tour · Envision, Dallas Campus",
   heading: "See Where Your\nPartnership Lives.",
   banner: {
     image: "/images/plant-tour.jpg",
-    imageAlt: "Envision Dallas Manufacturing",
-    badge: "Plant Tour · Envision Dallas",
+    imageAlt: "Envision, Dallas Campus Manufacturing",
+    badge: "Plant Tour · Envision, Dallas Campus",
     heading: "Walk Our Floors.\nMeet Our Teams.",
     subtitle: "See firsthand how your contributions power our mission.",
   },
   location: {
-    name: "Envision Dallas",
+    name: "Envision, Dallas Campus",
     address: "1801 Valley View Lane, Farmers Branch, TX 75234",
     phone: "(214) 821-2375",
   },
@@ -289,7 +289,7 @@ export const day2Golf = {
     imageAlt: "Cowboys Golf Club",
     badge: "7th Annual · Optional",
     heading: "Fore Vision\nGolf Tournament",
-    subtitle: "Benefiting Envision Dallas",
+    subtitle: "Benefiting Envision\u2019s Dallas Foundation",
     cta: { label: "Register Now →", href: "https://supplier-summit-2026.vercel.app" },
   },
   details: [
@@ -298,7 +298,7 @@ export const day2Golf = {
     { label: "Phone", value: "(817) 481-7277" },
     { label: "Format", value: "Shotgun Start" },
   ],
-  body: "Funds raised directly support Envision Dallas programs that provide employment, training, rehabilitation, outreach, education, and research for individuals who are blind or visually impaired. When we play together, we give back together.",
+  body: "Funds raised directly support Envision\u2019s Dallas Foundation programs that provide employment, training, rehabilitation, outreach, education, and research for individuals who are blind or visually impaired. When we play together, we give back together.",
 };
 
 export const day2Closing = {
@@ -314,9 +314,9 @@ export const footer = {
 };
 
 export const ticker = [
-  { type: "rsvp" as const, label: "RSVP", value: "Patrick Tuttle — Sr. VP of Operations & New Product Development", href: "mailto:Patrick.Tuttle@envisionus.com" },
-  { type: "email" as const, label: "Email", value: "Patrick.Tuttle@envisionus.com", href: "mailto:Patrick.Tuttle@envisionus.com" },
-  { type: "info" as const, label: "April 22–23, 2026", value: "Hotel Dax · Envision Dallas · Champions Social Club · Cowboys Golf Club" },
+  { type: "rsvp" as const, label: "RSVP Today", value: "", href: "https://supplier-summit-2026.vercel.app" },
+  { type: "info" as const, label: "April 22–23, 2026", value: "Hotel Dax · Envision, Dallas Campus · Champions Social Club · Cowboys Golf Club", href: "https://supplier-summit-2026.vercel.app" },
+  { type: "email" as const, label: "Contact", value: "Patrick.Tuttle@envisionus.com", href: "mailto:Patrick.Tuttle@envisionus.com" },
 ];
 
 export const navAnchors = {

@@ -59,6 +59,7 @@ export default function Nav({
             key={a.label}
             className="nav-anchor"
             href={a.href}
+            {...(!a.href.startsWith("#") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             onClick={(e) => {
               if (a.href.startsWith("#")) {
                 e.preventDefault();
@@ -71,7 +72,7 @@ export default function Nav({
         ))}
       </div>
 
-      <a className="nav-rsvp" href="https://supplier-summit-2026.vercel.app">
+      <a className="nav-rsvp" href="https://supplier-summit-2026.vercel.app" target="_blank" rel="noopener noreferrer">
         RSVP
       </a>
     </nav>
