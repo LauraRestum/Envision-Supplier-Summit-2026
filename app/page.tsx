@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import Nav from "./components/Nav";
 import Ticker from "./components/Ticker";
 import HeroParticles from "./components/HeroParticles";
@@ -14,12 +14,20 @@ type Page = "home" | "day1" | "day2";
 
 export default function Home() {
   const [activePage, setActivePage] = useState<Page>("home");
+  const shouldScroll = useRef(false);
+
+  useEffect(() => {
+    if (shouldScroll.current) {
+      shouldScroll.current = false;
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    }
+  }, [activePage]);
 
   const go = useCallback((p: Page) => {
+    shouldScroll.current = true;
     setActivePage(p);
-    requestAnimationFrame(() => {
-      window.scrollTo(0, 0);
-    });
   }, []);
 
   return (
