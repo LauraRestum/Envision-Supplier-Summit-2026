@@ -59,9 +59,12 @@ export default function Home() {
               </span>
             </div>
             <p className="hero-desc rv d4">{C.hero.body}</p>
-            <div className="rv d5">
+            <div className="hero-actions rv d5">
               <a className="btn-o" href="#agenda-glance" onClick={(e) => { e.preventDefault(); document.querySelector("#agenda-glance")?.scrollIntoView({ behavior: "smooth" }); }}>
                 {C.hero.ctaPrimary.label}
+              </a>
+              <a className="btn-g" href="https://supplier-summit-2026.vercel.app" target="_blank" rel="noopener noreferrer">
+                RSVP
               </a>
             </div>
           </div>
