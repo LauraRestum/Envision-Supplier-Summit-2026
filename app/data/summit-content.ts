@@ -285,8 +285,8 @@ export const day2Golf = {
   eyebrow: "Afternoon Event · Optional",
   heading: "End the Summit\non the Course.",
   banner: {
-    image: "/images/cowboys-golf-club.jpg",
-    imageAlt: "Cowboys Golf Club",
+    image: "/images/envision-dallas.jpg",
+    imageAlt: "Envision, Dallas Campus",
     badge: "7th Annual · Optional",
     heading: "Fore Vision\nGolf Tournament",
     subtitle: "Benefiting Envision\u2019s Dallas Foundation",
