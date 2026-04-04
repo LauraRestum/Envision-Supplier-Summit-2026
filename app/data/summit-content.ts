@@ -75,7 +75,7 @@ export const agendaGlance = {
     label: "Wednesday · April 22",
     title: "Day 1 — Strategic Insight",
     items: [
-      { time: "2:00 – 3:30 p.m.", title: "Executive Leadership Presentations & Opening Remarks" },
+      { time: "1:00 – 4:00 p.m.", title: "Executive Leadership Presentations & Opening Remarks" },
       { time: "5:00 p.m.", title: "ALL-IN Poker Tournament — Doors Open" },
       { time: "7:00 p.m.", title: "Tournament Begins · Champions Social Club" },
     ],
@@ -110,7 +110,7 @@ export const day1Hero = {
 };
 
 export const day1Speakers = {
-  eyebrow: "Opening Session · 2:00–3:30 p.m.",
+  eyebrow: "Opening Session · 1:00–4:00 p.m.",
   heading: "The Leaders You\u2019ll\nHear From Directly.",
   body: "An opportunity to connect directly with Envision leadership in an open, conversational setting. Real dialogue, shared insight, and a closer look at what\u2019s taking shape ahead.",
   location: {
@@ -128,7 +128,7 @@ export const day1Timeline = {
   items: [
     {
       number: 1,
-      time: "2:00 – 3:30 p.m.",
+      time: "1:00 – 4:00 p.m.",
       title: "Leadership Introductions & Opening Remarks",
       description:
         "Envision leadership will share a forward-looking view of where we\u2019re headed and how we continue to grow together. A look at priorities, progress, and what\u2019s taking shape ahead. Come with questions. Leave with clarity.",

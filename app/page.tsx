@@ -108,7 +108,7 @@ export default function Home() {
 
         {/* Speakers Preview */}
         <section className="s s-mid" id="home-speakers">
-          <div className="sec-eye rv">Opening Session · 2:00–3:30 p.m.</div>
+          <div className="sec-eye rv">Opening Session · 1:00–4:00 p.m.</div>
           <h2 className="sec-h rv d1">The Leaders You&rsquo;ll{"\n"}Hear From Directly.</h2>
           <p className="sec-sub rv d2">{C.day1Speakers.body}</p>
           <div className="spk-grid">
