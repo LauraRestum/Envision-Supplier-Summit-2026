@@ -100,7 +100,7 @@ export default function Home() {
               </div>
             </div>
             <div className="split-img rv d2">
-              <img src={C.direction.image} alt={C.direction.imageAlt} style={{ aspectRatio: "4/3", objectFit: "cover", width: "100%", borderRadius: 18 }} />
+              <img className="kenburns-img" src={C.direction.image} alt={C.direction.imageAlt} style={{ aspectRatio: "4/3", objectFit: "cover", width: "100%", borderRadius: 18 }} />
               <div className="split-img-border" />
             </div>
           </div>
