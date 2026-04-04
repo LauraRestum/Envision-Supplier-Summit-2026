@@ -3,7 +3,7 @@
 
 export const hero = {
   badge: "April 22–23, 2026 · By Invitation · Dallas, TX",
-  h1: "Envision",
+  h1: "ENVISION",
   h2: "Supplier Summit",
   metaLocation: "Addison & Farmers Branch, TX",
   metaDetails: "Two Days · By Invitation",
