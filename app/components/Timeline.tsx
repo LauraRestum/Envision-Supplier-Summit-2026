@@ -41,14 +41,14 @@ export default function Timeline({
                 <p className="tl-rsvp-prompt">{item.rsvpPrompt}</p>
               )}
               {item.rsvpHref && (
-                <a className="btn-o tl-rsvp-btn" href={item.rsvpHref}>
+                <a className="btn-o tl-rsvp-btn" href={item.rsvpHref} target="_blank" rel="noopener noreferrer">
                   RSVP Now →
                 </a>
               )}
             </div>
           )}
           {item.link && (
-            <a className="tl-link" href={item.link.href}>
+            <a className="tl-link" href={item.link.href} target="_blank" rel="noopener noreferrer">
               {item.link.label}
             </a>
           )}
