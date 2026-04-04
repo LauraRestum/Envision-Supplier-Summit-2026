@@ -16,8 +16,8 @@ export default function Home() {
   const [activePage, setActivePage] = useState<Page>("home");
 
   const go = useCallback((p: Page) => {
+    window.scrollTo({ top: 0 });
     setActivePage(p);
-    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   return (
