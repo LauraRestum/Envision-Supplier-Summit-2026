@@ -258,7 +258,7 @@ export const day2Agenda = {
       time: "6:00 p.m.",
       title: "Awards Dinner",
       description:
-        "Close out the 2026 Supplier Summit with dinner, recognition, and the kind of conversation that only happens when the day has gone well. When you succeed, we succeed — and this is where we celebrate that together.",
+        "Close out the 2026 Fore Vision Golf Tournament with dinner, recognition, and the kind of conversation that only happens when the day has gone well. When you succeed, we succeed — and this is where we celebrate that together.",
       location: "Cowboys Golf Club · Grapevine TX",
     },
   ],
