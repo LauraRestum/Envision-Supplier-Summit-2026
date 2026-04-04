@@ -734,9 +734,9 @@ a.ticker-item:hover { color:var(--green); }
   .hero-badge-dot { width:6px; height:6px; }
   .hero-meta-item { font-size:11px; }
   .hero-desc { font-size:13px; line-height:1.6; }
-  .hero-actions { flex-direction:column; width:100%; gap:10px; }
+  .hero-actions { flex-direction:column; width:100%; gap:10px; align-items:center; }
   .hero-actions .btn-o,
-  .hero-actions .btn-g { width:100%; text-align:center; box-sizing:border-box; }
+  .hero-actions .btn-g { width:100%; max-width:320px; text-align:center; box-sizing:border-box; }
   .btn-o, .btn-g { font-size:10px; padding:14px 22px; }
 
   .val-card { padding:28px 20px; }
@@ -780,11 +780,13 @@ a.ticker-item:hover { color:var(--green); }
   .tl-rsvp-btn { font-size:10px; padding:10px 20px; }
   .tl-link { font-size:9px; padding:8px 14px; }
 
-  .pb { min-height:200px; margin-top:20px; border-radius:4px; }
-  .pb-inner { padding:20px; }
-  .pb-tag { font-size:8px; padding:4px 10px; }
-  .pb-h { font-size:clamp(20px, 5.5vw, 28px); }
-  .pb-sub { font-size:11px; }
+  .pb { min-height:240px; margin-top:20px; border-radius:4px; }
+  .pb-ov { padding:20px; align-items:flex-end; }
+  .pb-inner { max-width:100%; }
+  .pb-tag { font-size:8px; padding:4px 10px; margin-bottom:8px; }
+  .pb-h { font-size:clamp(18px, 5vw, 26px); margin-bottom:6px; }
+  .pb-sub { font-size:11px; line-height:1.4; }
+  .pb .btn-g { font-size:9px; padding:10px 18px; margin-top:12px; }
 
   .lc { padding:14px 16px; gap:10px; flex-direction:column; }
   .lc-ico { margin-top:0; }
