@@ -16,8 +16,10 @@ export default function Home() {
   const [activePage, setActivePage] = useState<Page>("home");
 
   const go = useCallback((p: Page) => {
-    window.scrollTo({ top: 0 });
     setActivePage(p);
+    requestAnimationFrame(() => {
+      window.scrollTo(0, 0);
+    });
   }, []);
 
   return (
