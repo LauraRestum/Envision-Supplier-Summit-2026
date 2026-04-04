@@ -201,7 +201,7 @@ export const day2Hero = {
   eyebrow: "Thursday · April 23, 2026",
   heading: "Your Agenda.\nOur Full Attention.",
   body: "Focused one-on-one time with Envision\u2019s supply chain and operations leaders, an inside look at how we operate, and an afternoon on one of Texas\u2019s finest courses.",
-  image: "/images/day2-hero.jpg",
+  image: "/images/envision-dallas.jpg",
 };
 
 export const day2Agenda = {
@@ -285,8 +285,8 @@ export const day2Golf = {
   eyebrow: "Afternoon Event · Optional",
   heading: "End the Summit\non the Course.",
   banner: {
-    image: "/images/envision-dallas.jpg",
-    imageAlt: "Envision, Dallas Campus",
+    image: "/images/cowboys-golf-club.jpg",
+    imageAlt: "Cowboys Golf Club",
     badge: "7th Annual · Optional",
     heading: "Fore Vision\nGolf Tournament",
     subtitle: "Benefiting Envision\u2019s Dallas Foundation",
