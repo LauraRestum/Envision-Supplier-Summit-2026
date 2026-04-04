@@ -212,6 +212,8 @@ a.ticker-item:hover { color:var(--green); }
 }
 
 /* ═══════════ BUTTONS ═══════════ */
+.hero-actions { display:flex; gap:14px; align-items:center; flex-wrap:wrap; }
+
 .btn-g {
   display:inline-block; padding:15px 32px;
   background:var(--green); color:var(--bg);
@@ -650,17 +652,20 @@ a.ticker-item:hover { color:var(--green); }
   .sec-h { font-size:clamp(26px, 7vw, 42px); margin-bottom:18px; }
   .sec-sub { font-size:14px; }
 
-  .hero { padding:100px 28px 80px; }
+  .hero { padding:100px 28px 80px; min-height:90vh; }
   .hero-h1 { font-size:clamp(40px, 12vw, 70px); }
   .hero-h2 { font-size:clamp(32px, 9vw, 56px); }
   .hero-meta { flex-direction:column; gap:8px; }
-  .hero-desc { font-size:14px; }
+  .hero-meta-sep { display:none; }
+  .hero-desc { font-size:14px; max-width:none; }
+  .hero-actions { justify-content:center; }
 
   .val-grid { grid-template-columns:1fr; }
   .val-card { padding:36px 28px; }
   .val-num { font-size:56px; }
 
   .split { grid-template-columns:1fr; gap:36px; }
+  .split-img img { border-radius:12px; }
 
   .spk-grid { grid-template-columns:1fr; gap:12px; }
   .spk-card { aspect-ratio:4/3; }
@@ -670,7 +675,7 @@ a.ticker-item:hover { color:var(--green); }
 
   .dh { padding:64px 28px 56px; min-height:50vh; }
   .dh-h { font-size:clamp(28px, 8vw, 48px); }
-  .dh-sub { font-size:14px; }
+  .dh-sub { font-size:14px; max-width:none; }
 
   .tl { padding-left:36px; }
   .tl::before { left:12px; }
@@ -682,6 +687,7 @@ a.ticker-item:hover { color:var(--green); }
 
   .pb { min-height:280px; }
   .pb-h { font-size:clamp(24px, 6vw, 38px); }
+  .pb-inner { padding:28px; }
 
   .lc { padding:20px 24px; }
   .lc-name { font-size:15px; }
@@ -695,98 +701,125 @@ a.ticker-item:hover { color:var(--green); }
   .closing { padding:80px 28px; }
   .closing-h { font-size:clamp(28px, 8vw, 48px); }
 
-  .footer { padding:32px 28px; }
+  .footer { padding:32px 28px 68px; }
   .footer-links { flex-wrap:wrap; }
 }
 
 /* ═══════════ PHONE (<480px) ═══════════ */
 @media (max-width:480px) {
-  .nav { padding:0 14px; height:50px; gap:4px; }
-  .nav-logo svg { width:80px; }
-  .nav-logo-sep { height:18px; }
-  .nav-logo-text b { font-size:8px; letter-spacing:1px; }
-  .nav-logo-text span { font-size:6px; }
-  .nav-page { font-size:8px; padding:5px 7px; letter-spacing:1.2px; }
+  body { margin-bottom:30px; }
+
+  .nav { padding:0 12px; height:48px; }
+  .nav-left { gap:4px; }
+  .nav-logo { gap:8px; }
+  .nav-logo svg { width:72px; height:auto; }
+  .nav-logo-sep { height:16px; }
+  .nav-logo-text b { font-size:7px; letter-spacing:1px; }
+  .nav-logo-text span { font-size:5.5px; letter-spacing:1.5px; }
+  .nav-pages { gap:1px; }
+  .nav-page { font-size:8px; padding:5px 6px; letter-spacing:1px; }
 
   .s { padding:48px 18px; }
   .sec-eye { font-size:10px; gap:8px; }
   .sec-eye::before { width:24px; }
-  .sec-h { font-size:clamp(22px, 7vw, 36px); margin-bottom:14px; }
-  .sec-sub { font-size:13px; line-height:1.6; }
+  .sec-h { font-size:clamp(24px, 7vw, 36px); margin-bottom:14px; }
+  .sec-sub { font-size:13px; line-height:1.6; max-width:none; }
 
-  .hero { padding:80px 18px 60px; }
-  .hero-h1 { font-size:clamp(36px, 14vw, 56px); }
-  .hero-h2 { font-size:clamp(28px, 10vw, 44px); }
-  .hero-badge { padding:6px 14px; font-size:10px; margin-bottom:24px; }
-  .hero-desc { font-size:13px; }
-  .btn-o, .btn-g { font-size:10px; padding:12px 22px; }
+  .hero { padding:70px 18px 50px; min-height:85vh; }
+  .hero-body { max-width:100%; }
+  .hero-h1 { font-size:clamp(38px, 13vw, 56px); }
+  .hero-h2 { font-size:clamp(30px, 10vw, 44px); margin-bottom:16px; }
+  .hero-badge { padding:6px 12px; font-size:9px; letter-spacing:1.5px; margin-bottom:20px; }
+  .hero-badge-dot { width:6px; height:6px; }
+  .hero-meta-item { font-size:11px; }
+  .hero-desc { font-size:13px; line-height:1.6; }
+  .hero-actions { flex-direction:column; width:100%; gap:10px; }
+  .hero-actions .btn-o,
+  .hero-actions .btn-g { width:100%; text-align:center; box-sizing:border-box; }
+  .btn-o, .btn-g { font-size:10px; padding:14px 22px; }
 
   .val-card { padding:28px 20px; }
   .val-num { font-size:44px; }
   .val-label { font-size:15px; }
   .val-desc { font-size:13px; }
 
+  .spk-grid { gap:10px; }
   .spk-card { aspect-ratio:3/2; }
   .spk-name { font-size:16px; }
   .spk-role { font-size:11px; }
 
-  .ag-card-head { padding:20px; }
-  .ag-card-body { padding:16px; }
-  .ag-row { gap:10px; }
+  .ag-grid { margin-top:32px; }
+  .ag-card { border-radius:6px; }
+  .ag-card-head { padding:18px; }
+  .ag-card-title { font-size:16px; }
+  .ag-card-body { padding:14px 18px; }
+  .ag-row { gap:8px; padding:10px 0; }
   .ag-time { font-size:9px; min-width:auto; }
   .ag-title { font-size:12px; }
+  .ag-link { font-size:10px; }
 
-  .dh { padding:50px 18px 40px; min-height:40vh; }
-  .dh-eye { font-size:10px; }
-  .dh-h { font-size:clamp(24px, 8vw, 36px); }
-  .dh-sub { font-size:13px; }
+  .dh { padding:48px 18px 36px; min-height:40vh; }
+  .dh-eye { font-size:9px; }
+  .dh-h { font-size:clamp(26px, 9vw, 36px); }
+  .dh-sub { font-size:13px; max-width:none; }
 
   .tl { padding-left:30px; }
   .tl::before { left:8px; }
+  .tl-date { font-size:10px; }
   .tl-num { left:-30px; width:22px; height:22px; font-size:8px; }
   .tl-item { padding-bottom:32px; }
+  .tl-time { font-size:10px; }
   .tl-title { font-size:16px; }
-  .tl-desc { font-size:12px; }
-  .tl-loc { font-size:9px; padding:8px 14px; letter-spacing:1.2px; }
-  .tl-focus-block { padding:14px 16px; }
-  .tl-focus-label { font-size:10px; }
+  .tl-desc { font-size:12px; line-height:1.6; }
+  .tl-loc { font-size:9px; padding:8px 14px; letter-spacing:1px; }
+  .tl-focus-block { padding:14px 16px; margin-top:16px; }
+  .tl-focus-label { font-size:10px; letter-spacing:1.2px; }
   .tl-focus-tag { font-size:12px; }
-  .tl-focus-tag:not(:last-child)::after { margin-left:10px; }
-  .tl-rsvp-btn { font-size:10px; padding:9px 20px; }
+  .tl-focus-tag:not(:last-child)::after { margin-left:8px; }
+  .tl-rsvp-btn { font-size:10px; padding:10px 20px; }
+  .tl-link { font-size:9px; padding:8px 14px; }
 
-  .pb { min-height:220px; margin-top:24px; }
-  .pb-tag { font-size:9px; }
-  .pb-h { font-size:clamp(20px, 5.5vw, 30px); }
-  .pb-sub { font-size:12px; }
+  .pb { min-height:200px; margin-top:20px; border-radius:4px; }
+  .pb-inner { padding:20px; }
+  .pb-tag { font-size:8px; padding:4px 10px; }
+  .pb-h { font-size:clamp(20px, 5.5vw, 28px); }
+  .pb-sub { font-size:11px; }
 
-  .lc { padding:16px 18px; gap:12px; }
+  .lc { padding:14px 16px; gap:10px; flex-direction:column; }
+  .lc-ico { margin-top:0; }
   .lc-name { font-size:14px; }
   .lc-addr { font-size:12px; }
 
-  .det-grid { grid-template-columns:1fr; }
-  .det-cell { padding:14px 18px; border-right:none; border-bottom:1px solid var(--border); }
+  .det-grid { grid-template-columns:1fr; margin-top:20px; }
+  .det-cell { padding:12px 16px; border-right:none; border-bottom:1px solid var(--border); }
   .det-cell:last-child { border-bottom:none; }
   .det-label { font-size:9px; }
   .det-value { font-size:13px; }
 
-  .price-card { padding:24px 20px; }
-  .price-num { font-size:36px; }
-  .price-desc { font-size:13px; }
+  .price-grid { margin-top:14px; }
+  .price-card { padding:22px 18px; }
+  .price-num { font-size:34px; }
+  .price-unit { font-size:12px; }
+  .price-desc { font-size:12px; }
+  .price-note { font-size:11px; }
 
-  .closing { padding:56px 18px; }
-  .closing-h { font-size:clamp(24px, 8vw, 36px); }
+  .closing { padding:48px 18px; }
+  .closing-h { font-size:clamp(24px, 8vw, 34px); }
   .closing-sub { font-size:13px; }
 
-  .dot-div { padding:28px 0; }
+  .dot-div { padding:24px 0; }
 
-  .footer { padding:24px 18px; }
-  .footer-logo { gap:10px; }
-  .footer-logo b { font-size:10px; }
-  .footer-links { gap:14px; }
+  .footer { padding:24px 18px 64px; }
+  .footer-logo { gap:8px; flex-wrap:wrap; justify-content:center; }
+  .footer-logo b { font-size:9px; }
+  .footer-logo span { font-size:7px; }
+  .footer-copy { font-size:11px; }
+  .footer-links { gap:12px; }
   .footer-links a { font-size:10px; }
 
-  .ticker { height:30px; }
-  a.ticker-item { font-size:9px; padding:0 16px; }
+  .ticker { height:28px; }
+  a.ticker-item { font-size:8px; padding:0 14px; letter-spacing:1px; }
+  .ticker-dot { width:3px; height:3px; }
 }
 
 /* ═══════════ REDUCED MOTION ═══════════ */
