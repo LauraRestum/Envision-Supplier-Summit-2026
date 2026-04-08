@@ -51,25 +51,25 @@ export const speakers = [
     name: "Michael Monteferrante",
     role: "President & CEO",
     image: "/images/michael-monteferrante.jpg",
-    objectPosition: "48% 46%",
+    objectPosition: "48% 28%",
   },
   {
     name: "Patrick Tuttle",
     role: "Sr. VP, Operations & NPD",
     image: "/images/patrick-tuttle.jpg",
-    objectPosition: "48% 52%",
+    objectPosition: "48% 38%",
   },
   {
     name: "Buddy Sell",
     role: "Executive Advisor to the CEO",
     image: "/images/buddy-sell.jpg",
-    objectPosition: "50% 50%",
+    objectPosition: "48% 35%",
   },
   {
     name: "Troy McKissick",
     role: "Interim CFO",
     image: "/images/troy-mckissick.jpg",
-    objectPosition: "50% 53%",
+    objectPosition: "50% 38%",
   },
 ];
 
