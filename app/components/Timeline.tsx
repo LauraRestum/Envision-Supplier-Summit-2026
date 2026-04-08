@@ -25,7 +25,7 @@ export default function Timeline({
           <div className="tl-num">{item.number}</div>
           <div className="tl-time">{item.time}</div>
           <div className="tl-title">{item.title}</div>
-          <p className="tl-desc">{item.description}</p>
+          <p className="tl-desc" dangerouslySetInnerHTML={{ __html: item.description }} />
           {item.location && (
             <span className="tl-loc">{item.location}</span>
           )}
