@@ -131,7 +131,7 @@ export const day1Timeline = {
       time: "1:00 – 4:00 p.m.",
       title: "Executive Leadership Presentations & Networking Reception",
       description:
-        "Envision leadership will share a forward-looking view of where we\u2019re headed and how we continue to grow together. Hear directly from our executive team on the state of Envision and where we\u2019re headed, financial strength and what it means for our partners, operations, quality, and supply chain priorities, and sales, markets, and what\u2019s ahead \u2014 followed by networking, cocktails, and hors d\u2019oeuvres.",
+        "Envision leadership will share a forward-looking view of where we\u2019re headed and how we continue to grow together. Hear directly from our executive team on <strong>the state of Envision</strong> and where we\u2019re headed, <strong>financial strength</strong> and what it means for our partners, <strong>operations, quality, and supply chain priorities</strong>, and <strong>sales, markets, and what\u2019s ahead</strong> \u2014 followed by networking, cocktails, and hors d\u2019oeuvres.",
       location: "Hotel Dax · Addison TX",
     },
     {
