@@ -61,9 +61,15 @@ export const speakers = [
   },
   {
     name: "Troy McKissick",
-    role: "VP & Controller",
+    role: "Interim CFO",
     image: "/images/troy-mckissick.jpg",
     objectPosition: "50% 53%",
+  },
+  {
+    name: "Buddy Sell",
+    role: "Executive Advisor to the CEO",
+    image: "/images/buddy-sell.jpg",
+    objectPosition: "50% 50%",
   },
 ];
 
