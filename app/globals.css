@@ -308,7 +308,7 @@ a.ticker-item:hover { color:var(--green); }
 }
 .spk-photo-overlay {
   position:absolute; inset:0;
-  background:linear-gradient(180deg, transparent 50%, rgba(0,11,43,.85) 100%);
+  background:linear-gradient(180deg, transparent 55%, rgba(0,11,43,.7) 85%, rgba(0,11,43,.92) 100%);
 }
 .spk-info {
   position:absolute; bottom:0; left:0; right:0;
