@@ -62,7 +62,7 @@ export const speakers = [
   {
     name: "Buddy Sell",
     role: "Executive Advisor to the CEO",
-    image: "",
+    image: "/images/buddy-sell.jpg",
     objectPosition: "50% 50%",
   },
   {
