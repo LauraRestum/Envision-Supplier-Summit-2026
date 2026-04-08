@@ -41,10 +41,22 @@ export const mainSchedule: DaySchedule[] = [
     address: "14315 Midway Road, Addison, TX 75001",
     sessions: [
       {
-        time: "1:00 PM – 4:00 PM",
-        title: "Leadership Introductions & Opening Remarks",
+        time: "1:00 PM – 2:30 PM",
+        title: "Opening Remarks — Executive Leadership Presentations",
         description:
-          "Hear directly from Envision's executive team as they set strategic direction, define growth priorities, and establish the future of our partnership. This is a candid, on-the-record discussion of where we're headed, what we're prioritizing, and how we expect to work together moving forward.",
+          "Hear directly from Envision's executive team as they set strategic direction, define growth priorities, and establish the future of our partnership. A candid, forward-looking discussion of where we're headed, what we're prioritizing, and how we expect to work together moving forward.",
+      },
+      {
+        time: "2:30 PM – 3:30 PM",
+        title: "Networking & Strategic Collaborations",
+        description:
+          "Dedicated time to connect directly with Envision leadership and fellow suppliers. Exchange ideas, explore partnership opportunities, and align on strategic priorities in a focused, conversational setting.",
+      },
+      {
+        time: "3:30 PM – 5:00 PM",
+        title: "Opening Reception",
+        description:
+          "A premier reception featuring hand-crafted cocktails, chef-curated hors d'oeuvres, and live conversation with the people who matter most to your business. Strategy meets relationship in a refined, high-energy atmosphere.",
       },
     ],
   },
@@ -126,8 +138,14 @@ April 22–23, 2026
 Venue: Hotel DAX
 Address: 14315 Midway Road, Addison, TX 75001
 
-1:00 PM – 4:00 PM | Leadership Introductions & Opening Remarks
-Hear directly from Envision's executive team as they set strategic direction, define growth priorities, and establish the future of our partnership. This is a candid, on-the-record discussion of where we're headed, what we're prioritizing, and how we expect to work together moving forward.
+1:00 PM – 2:30 PM | Opening Remarks — Executive Leadership Presentations
+Hear directly from Envision's executive team as they set strategic direction, define growth priorities, and establish the future of our partnership. A candid, forward-looking discussion of where we're headed, what we're prioritizing, and how we expect to work together moving forward.
+
+2:30 PM – 3:30 PM | Networking & Strategic Collaborations
+Dedicated time to connect directly with Envision leadership and fellow suppliers. Exchange ideas, explore partnership opportunities, and align on strategic priorities.
+
+3:30 PM – 5:00 PM | Opening Reception
+A premier reception featuring hand-crafted cocktails, chef-curated hors d'oeuvres, and live conversation. Strategy meets relationship in a refined, high-energy atmosphere.
 
 === THURSDAY, APRIL 23, 2026 ===
 Venue: Envision, Dallas Campus

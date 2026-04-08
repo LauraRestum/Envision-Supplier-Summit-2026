@@ -81,7 +81,9 @@ export const agendaGlance = {
     label: "Wednesday · April 22",
     title: "Day 1 — Strategic Insight",
     items: [
-      { time: "1:00 – 4:00 p.m.", title: "Executive Leadership Presentations & Networking Reception" },
+      { time: "1:00 – 2:30 p.m.", title: "Opening Remarks — Executive Leadership Presentations" },
+      { time: "2:30 – 3:30 p.m.", title: "Networking & Strategic Collaborations" },
+      { time: "3:30 – 5:00 p.m.", title: "Opening Reception — Cocktails & Hors d\u2019Oeuvres" },
     ],
     link: "Full Day 1 Agenda →",
   },
@@ -114,7 +116,7 @@ export const day1Hero = {
 };
 
 export const day1Speakers = {
-  eyebrow: "Opening Session · 1:00–4:00 p.m.",
+  eyebrow: "Opening Session · 1:00–5:00 p.m.",
   heading: "The Leaders You\u2019ll\nHear From Directly.",
   body: "An opportunity to connect directly with Envision leadership in an open, conversational setting. Real dialogue, shared insight, and a closer look at what\u2019s taking shape ahead.",
   location: {
@@ -127,15 +129,31 @@ export const day1Speakers = {
 export const day1Timeline = {
   eyebrow: "Agenda · Day 1",
   heading: "Designed Around\nYour Time.",
-  body: "An afternoon of direct leadership access, open dialogue, and strategic alignment.",
+  body: "An afternoon of executive insight, strategic collaboration, and an elevated reception to close out the day.",
   dateLabel: "Wednesday · April 22, 2026",
   items: [
     {
       number: 1,
-      time: "1:00 – 4:00 p.m.",
-      title: "Executive Leadership Presentations & Networking Reception",
+      time: "1:00 – 2:30 p.m.",
+      title: "Opening Remarks — Executive Leadership Presentations",
       description:
-        "Envision leadership will share a forward-looking view of where we\u2019re headed and how we continue to grow together. Hear directly from our executive team on <strong>the state of Envision</strong> and where we\u2019re headed, <strong>financial strength</strong> and what it means for our partners, <strong>operations, quality, and supply chain priorities</strong>, and <strong>sales, markets, and what\u2019s ahead</strong> \u2014 followed by networking, cocktails, and hors d\u2019oeuvres.",
+        "Hear directly from Envision\u2019s executive team on <strong>the state of Envision</strong> and where we\u2019re headed, <strong>financial strength</strong> and what it means for our partners, <strong>operations, quality, and supply chain priorities</strong>, and <strong>sales, markets, and what\u2019s ahead</strong>. A forward-looking view of our direction and how we continue to grow together.",
+      location: "Hotel Dax · Addison TX",
+    },
+    {
+      number: 2,
+      time: "2:30 – 3:30 p.m.",
+      title: "Networking & Strategic Collaborations",
+      description:
+        "Dedicated time to connect directly with Envision leadership and fellow suppliers. Exchange ideas, explore partnership opportunities, and align on strategic priorities in a focused, conversational setting.",
+      location: "Hotel Dax · Addison TX",
+    },
+    {
+      number: 3,
+      time: "3:30 – 5:00 p.m.",
+      title: "Opening Reception",
+      description:
+        "Cap off the afternoon with a premier reception featuring hand-crafted cocktails, chef-curated hors d\u2019oeuvres, and live conversation with the people who matter most to your business. This is where strategy meets relationship \u2014 an evening designed to deepen connections in a refined, high-energy atmosphere.",
       location: "Hotel Dax · Addison TX",
     },
   ],
