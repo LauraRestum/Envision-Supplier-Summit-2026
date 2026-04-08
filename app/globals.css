@@ -288,7 +288,7 @@ a.ticker-item:hover { color:var(--green); }
 
 /* ═══════════ SPEAKER CARDS ═══════════ */
 .spk-grid {
-  display:grid; grid-template-columns:repeat(3,1fr); gap:16px;
+  display:grid; grid-template-columns:repeat(4,1fr); gap:16px;
   margin-top:36px;
 }
 .spk-card {
