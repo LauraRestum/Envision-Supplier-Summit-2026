@@ -82,8 +82,6 @@ export const agendaGlance = {
     title: "Day 1 — Strategic Insight",
     items: [
       { time: "1:00 – 4:00 p.m.", title: "Executive Leadership Presentations & Networking Reception" },
-      { time: "5:00 p.m.", title: "ALL-IN Poker Tournament — Doors Open" },
-      { time: "7:00 p.m.", title: "Tournament Begins · Champions Social Club" },
     ],
     link: "Full Day 1 Agenda →",
   },
@@ -129,7 +127,7 @@ export const day1Speakers = {
 export const day1Timeline = {
   eyebrow: "Agenda · Day 1",
   heading: "Designed Around\nYour Time.",
-  body: "An afternoon of direct leadership access, open dialogue, and strategic alignment — followed by an evening of friendly competition and meaningful connection at Champions Social Club.",
+  body: "An afternoon of direct leadership access, open dialogue, and strategic alignment.",
   dateLabel: "Wednesday · April 22, 2026",
   items: [
     {
@@ -140,59 +138,7 @@ export const day1Timeline = {
         "Envision leadership will share a forward-looking view of where we\u2019re headed and how we continue to grow together. Hear directly from our executive team on <strong>the state of Envision</strong> and where we\u2019re headed, <strong>financial strength</strong> and what it means for our partners, <strong>operations, quality, and supply chain priorities</strong>, and <strong>sales, markets, and what\u2019s ahead</strong> \u2014 followed by networking, cocktails, and hors d\u2019oeuvres.",
       location: "Hotel Dax · Addison TX",
     },
-    {
-      number: 2,
-      time: "5:00 p.m. — Doors Open",
-      title: "ALL-IN Poker Tournament",
-      description:
-        "An evening of friendly competition and meaningful contribution at Champions Social Club. Benefits Envision\u2019s Dallas Foundation. Chef-curated hors d\u2019oeuvres and two drinks included. Capped at 150 players.",
-      location: "Champions Social Club · 17776 Dallas Pkwy, Dallas TX",
-      link: { label: "Register →", href: "https://pro.gofundme.com/event/envision-dallas-poker-tournament/e763479/register/new/select-tickets" },
-    },
-    {
-      number: 3,
-      time: "7:00 p.m.",
-      title: "Tournament Begins",
-      description:
-        "Tournament Player: $150 per buy-in · Unlimited buy-ins available. Non-Player Guest: $75 per person. Full access to Champions Social Club throughout the evening.",
-    },
   ],
-};
-
-export const day1Evening = {
-  eyebrow: "Evening Event · Optional",
-  heading: "Connect Beyond\nthe Boardroom.",
-  banner: {
-    image: "/images/champions-social-club.jpg",
-    imageAlt: "Champions Social Club",
-    badge: "Optional Evening Event",
-    heading: "ALL-IN Poker\nTournament",
-    subtitle: "A relaxed evening of competition and connection — benefiting Envision\u2019s Dallas Foundation",
-    cta: { label: "Register Now →", href: "https://pro.gofundme.com/event/envision-dallas-poker-tournament/e763479/register/new/select-tickets" },
-  },
-  details: [
-    { label: "Venue", value: "Champions Social Club" },
-    { label: "Address", value: "17776 Dallas Pkwy, Dallas TX 75287" },
-    { label: "Doors Open", value: "5:00 p.m." },
-    { label: "Tournament Begins", value: "7:00 p.m." },
-  ],
-  pricing: [
-    {
-      label: "Tournament Player",
-      price: "$150",
-      unit: "per buy-in",
-      description:
-        "Guaranteed entry into the multi-table charity tournament. Chef-curated hors d\u2019oeuvres, two drinks. Unlimited buy-ins available.",
-    },
-    {
-      label: "Non-Player Guest",
-      price: "$75",
-      unit: "per person",
-      description:
-        "Full access to Champions Social Club during the tournament. Chef-curated hors d\u2019oeuvres and two drinks included.",
-    },
-  ],
-  note: "Player participation is capped at 150 total players.",
 };
 
 export const day1Closing = {
@@ -316,12 +262,11 @@ export const footer = {
   copyright: "© 2026 Envision. All rights reserved.",
   contactEmail: "Patrick.Tuttle@envisionus.com",
   golfLink: "https://www.envisionus.com/golf-fore-vision-dallas",
-  pokerLink: "https://pro.gofundme.com/event/envision-dallas-poker-tournament/e763479/register/new/select-tickets",
 };
 
 export const ticker = [
   { type: "rsvp" as const, label: "RSVP Today", value: "", href: "https://supplier-summit-2026.vercel.app" },
-  { type: "info" as const, label: "April 22–23, 2026", value: "Hotel Dax · Envision, Dallas Campus · Champions Social Club · Cowboys Golf Club", href: "https://supplier-summit-2026.vercel.app" },
+  { type: "info" as const, label: "April 22–23, 2026", value: "Hotel Dax · Envision, Dallas Campus · Cowboys Golf Club", href: "https://supplier-summit-2026.vercel.app" },
 ];
 
 export const navAnchors = {
@@ -334,7 +279,6 @@ export const navAnchors = {
   day1: [
     { label: "Speakers", href: "#d1-speakers" },
     { label: "Agenda", href: "#d1-agenda" },
-    { label: "Evening", href: "#d1-event" },
     { label: "RSVP", href: "https://supplier-summit-2026.vercel.app" },
   ],
   day2: [
