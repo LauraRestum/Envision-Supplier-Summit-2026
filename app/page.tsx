@@ -261,47 +261,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Evening Event */}
-        <section className="s s-dark" id="d1-event">
-          <div className="sec-eye rv">{C.day1Evening.eyebrow}</div>
-          <h2 className="sec-h rv d1" style={{ whiteSpace: "pre-line" }}>{C.day1Evening.heading}</h2>
-
-          <PhotoBanner
-            imageSrc={C.day1Evening.banner.image}
-            imageAlt={C.day1Evening.banner.imageAlt}
-            badge={C.day1Evening.banner.badge}
-            heading={C.day1Evening.banner.heading}
-            subtitle={C.day1Evening.banner.subtitle}
-            ctaText={C.day1Evening.banner.cta.label}
-            ctaHref={C.day1Evening.banner.cta.href}
-          />
-
-          {/* Detail Grid */}
-          <div className="det-grid rv d3">
-            {C.day1Evening.details.map((d) => (
-              <div key={d.label} className="det-cell">
-                <div className="det-label">{d.label}</div>
-                <div className="det-value">{d.value}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* Pricing */}
-          <div className="price-grid rv d4">
-            {C.day1Evening.pricing.map((p) => (
-              <div key={p.label} className="price-card">
-                <div className="price-label">{p.label}</div>
-                <div className="price-amount">
-                  <span className="price-num">{p.price}</span>
-                  <span className="price-unit">{p.unit}</span>
-                </div>
-                <p className="price-desc">{p.description}</p>
-              </div>
-            ))}
-          </div>
-          <p className="price-note rv d5">{C.day1Evening.note}</p>
-        </section>
-
         {/* Day 2 Teaser */}
         <section className="closing s-dark">
           <div className="dot-div" />
@@ -434,7 +393,6 @@ function Footer() {
       <div className="footer-links">
         <a href={`mailto:${C.footer.contactEmail}`}>Contact</a>
         <a href={C.footer.golfLink} target="_blank" rel="noopener noreferrer">Golf</a>
-        <a href={C.footer.pokerLink} target="_blank" rel="noopener noreferrer">Poker</a>
       </div>
     </footer>
   );

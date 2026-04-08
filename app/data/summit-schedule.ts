@@ -81,30 +81,10 @@ export const mainSchedule: DaySchedule[] = [
 
 export const beyondTheSummit: BeyondTheSummit = {
   title: "Beyond the Summit",
-  subtitle: "Evening & Tournament Experiences",
+  subtitle: "Tournament Experience",
   intro:
     "Extend the summit experience beyond the meeting room while helping raise critical funds for Envision's Dallas Foundation. Join us in a relaxed, high-quality setting where meaningful conversations continue, relationships deepen, and your participation directly supports programs that drive lasting impact.",
   events: [
-    {
-      title: "All-In Poker Tournament",
-      description:
-        "An evening of connection, competition, and meaningful contribution at Champions Social Club, benefiting Envision's Dallas Foundation. Enjoy a relaxed environment with peers and partners alongside chef-curated hors d'oeuvres.",
-      venue: "Champions Social Club",
-      address: "17776 Dallas Parkway, Dallas, TX 75287",
-      sessions: [
-        {
-          time: "5:00 PM",
-          title: "Doors Open",
-          description: "",
-        },
-        {
-          time: "7:00 PM",
-          title: "Tournament Begins",
-          description:
-            "Tournament play begins promptly at 7 PM. Registered guests are welcome to enjoy the space throughout the evening.",
-        },
-      ],
-    },
     {
       title: "Fore Vision Golf Tournament",
       description:
@@ -133,7 +113,7 @@ export const beyondTheSummit: BeyondTheSummit = {
     },
   ],
   registrationNote:
-    "Pre-registration is required for both foundation events.",
+    "Pre-registration is required for the foundation event.",
   registrationContact: "Larissa.Roman@envisionus.com",
 };
 
@@ -166,17 +146,9 @@ Location: 2nd Floor Administrative Lobby
 Walk the floors of Envision's Dallas manufacturing and logistics facility and experience the operation firsthand. Tours depart hourly at 8:00, 9:00, and 10:00 AM.
 Location: 2nd Floor Administrative Lobby
 
-=== BEYOND THE SUMMIT: Evening & Tournament Experiences ===
+=== BEYOND THE SUMMIT: Tournament Experience ===
 
-WEDNESDAY EVENING – April 22, 2026
-All-In Poker Tournament
-Venue: Champions Social Club
-Address: 17776 Dallas Parkway, Dallas, TX 75287
-An evening of connection, competition, and meaningful contribution benefiting Envision's Dallas Foundation. Chef-curated hors d'oeuvres served throughout the evening.
-5:00 PM – Doors Open
-7:00 PM – Tournament Begins (registered guests welcome throughout the evening)
-
-THURSDAY EVENING – April 23, 2026
+THURSDAY – April 23, 2026
 Fore Vision Golf Tournament (7th Annual)
 Venue: Cowboys Golf Club
 Address: 1600 Fairway Dr, Grapevine, TX 76051
@@ -185,6 +157,6 @@ Benefiting Envision's Dallas Foundation.
 1:30 PM – Shotgun Start (all players tee off simultaneously)
 6:00 PM – Awards Dinner
 
-Pre-registration is required for both foundation events.
+Pre-registration is required for the foundation event.
 For last-minute sign-ups, contact: Larissa.Roman@envisionus.com
 `.trim();
