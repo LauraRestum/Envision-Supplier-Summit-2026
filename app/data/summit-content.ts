@@ -75,7 +75,7 @@ export const agendaGlance = {
     label: "Wednesday · April 22",
     title: "Day 1 — Strategic Insight",
     items: [
-      { time: "1:00 – 4:00 p.m.", title: "Executive Leadership Presentations & Opening Remarks" },
+      { time: "1:00 – 4:00 p.m.", title: "Executive Leadership Presentations & Networking Reception" },
       { time: "5:00 p.m.", title: "ALL-IN Poker Tournament — Doors Open" },
       { time: "7:00 p.m.", title: "Tournament Begins · Champions Social Club" },
     ],
@@ -129,9 +129,9 @@ export const day1Timeline = {
     {
       number: 1,
       time: "1:00 – 4:00 p.m.",
-      title: "Leadership Introductions & Opening Remarks",
+      title: "Executive Leadership Presentations & Networking Reception",
       description:
-        "Envision leadership will share a forward-looking view of where we\u2019re headed and how we continue to grow together. A look at priorities, progress, and what\u2019s taking shape ahead. Come with questions. Leave with clarity.",
+        "Envision leadership will share a forward-looking view of where we\u2019re headed and how we continue to grow together. Hear directly from our executive team on the state of Envision and where we\u2019re headed, financial strength and what it means for our partners, operations, quality, and supply chain priorities, and sales, markets, and what\u2019s ahead \u2014 followed by networking, cocktails, and hors d\u2019oeuvres.",
       location: "Hotel Dax · Addison TX",
     },
     {
