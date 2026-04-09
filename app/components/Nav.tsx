@@ -5,10 +5,8 @@ import { navAnchors } from "../data/summit-content";
 
 type Page = "home" | "day1" | "day2";
 
-const envisionLogoSvg = (
-  <svg width="110" height="22" viewBox="0 0 110 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <text x="0" y="17" fontFamily="Montserrat,sans-serif" fontWeight="900" fontSize="16" fill="white" letterSpacing="0.5">ENVISION</text>
-  </svg>
+const envisionLogoImg = (
+  <img src="/images/envision-logo.png" alt="Envision" style={{ height: 22 }} />
 );
 
 export default function Nav({
@@ -32,7 +30,7 @@ export default function Nav({
     <nav className={`nav${scrolled ? " sc" : ""}`}>
       <div className="nav-left">
         <button className="nav-logo" onClick={() => onPageChange("home")}>
-          {envisionLogoSvg}
+          {envisionLogoImg}
           <div className="nav-logo-sep" />
           <div className="nav-logo-text">
             <b>Supplier Summit</b>
