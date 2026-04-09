@@ -41,22 +41,16 @@ export const mainSchedule: DaySchedule[] = [
     address: "14315 Midway Road, Addison, TX 75001",
     sessions: [
       {
-        time: "1:00 PM – 2:30 PM",
-        title: "Opening Remarks — Executive Leadership Presentations",
+        time: "1:00 PM – 2:00 PM",
+        title: "Opening Reception & Networking",
         description:
-          "Hear directly from Envision's executive team as they set strategic direction, define growth priorities, and establish the future of our partnership. A candid, forward-looking discussion of where we're headed, what we're prioritizing, and how we expect to work together moving forward.",
+          "Join Envision leadership and fellow suppliers for an opening reception with cocktails and hors d'oeuvres. A welcoming start to the Summit and an opportunity to build connections ahead of two days of strategic dialogue.",
       },
       {
-        time: "2:30 PM – 3:30 PM",
-        title: "Networking & Strategic Collaborations",
+        time: "2:00 PM – 3:30 PM",
+        title: "Executive Leadership Presentations",
         description:
-          "Dedicated time to connect directly with Envision leadership and fellow suppliers. Exchange ideas, explore partnership opportunities, and align on strategic priorities in a focused, conversational setting.",
-      },
-      {
-        time: "3:30 PM – 5:00 PM",
-        title: "Opening Reception",
-        description:
-          "A premier reception featuring hand-crafted cocktails, chef-curated hors d'oeuvres, and live conversation with the people who matter most to your business. Strategy meets relationship in a refined, high-energy atmosphere.",
+          "Hear directly from Envision's executive team on the state of Envision and where we're headed, financial strength and what it means for our partners, operations, quality, and supply chain priorities, and sales, markets, and what's ahead. A forward-looking view of our direction and how we continue to grow together.",
       },
     ],
   },
@@ -138,14 +132,11 @@ April 22–23, 2026
 Venue: Hotel DAX
 Address: 14315 Midway Road, Addison, TX 75001
 
-1:00 PM – 2:30 PM | Opening Remarks — Executive Leadership Presentations
-Hear directly from Envision's executive team as they set strategic direction, define growth priorities, and establish the future of our partnership. A candid, forward-looking discussion of where we're headed, what we're prioritizing, and how we expect to work together moving forward.
+1:00 PM – 2:00 PM | Opening Reception & Networking
+Join Envision leadership and fellow suppliers for an opening reception with cocktails and hors d'oeuvres. A welcoming start to the Summit and an opportunity to build connections ahead of two days of strategic dialogue.
 
-2:30 PM – 3:30 PM | Networking & Strategic Collaborations
-Dedicated time to connect directly with Envision leadership and fellow suppliers. Exchange ideas, explore partnership opportunities, and align on strategic priorities.
-
-3:30 PM – 5:00 PM | Opening Reception
-A premier reception featuring hand-crafted cocktails, chef-curated hors d'oeuvres, and live conversation. Strategy meets relationship in a refined, high-energy atmosphere.
+2:00 PM – 3:30 PM | Executive Leadership Presentations
+Hear directly from Envision's executive team on the state of Envision and where we're headed, financial strength and what it means for our partners, operations, quality, and supply chain priorities, and sales, markets, and what's ahead. A forward-looking view of our direction and how we continue to grow together.
 
 === THURSDAY, APRIL 23, 2026 ===
 Venue: Envision, Dallas Campus
