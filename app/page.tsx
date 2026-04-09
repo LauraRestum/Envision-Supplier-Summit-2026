@@ -381,7 +381,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-logo">
         <div>
-          <b>Envision</b>
+          <img src="/images/envision-logo.png" alt="Envision" style={{ height: 22 }} />
         </div>
         <div style={{ width: 1, height: 20, background: "rgba(255,255,255,.15)" }} />
         <div>
