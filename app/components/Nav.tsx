@@ -70,7 +70,7 @@ export default function Nav({
         ))}
       </div>
 
-      <a className="nav-rsvp" href="https://supplier-summit-2026.vercel.app" target="_blank" rel="noopener noreferrer">
+      <a className="nav-rsvp" href="https://supplier-summit-rsvp.vercel.app" target="_blank" rel="noopener noreferrer">
         RSVP
       </a>
     </nav>
