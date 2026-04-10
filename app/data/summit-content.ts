@@ -188,7 +188,7 @@ export const day2Agenda = {
       location: "2nd Floor Administrative Lobby",
       focusTopics: ["Alignment", "Efficiency", "Scalability", "Reliability", "Growth"],
       rsvpPrompt: "Have a question in mind? RSVP and let us know.",
-      rsvpHref: "https://supplier-summit-2026.vercel.app",
+      rsvpHref: "https://supplier-summit-rsvp.vercel.app",
     },
     {
       number: 3,
@@ -274,8 +274,8 @@ export const footer = {
 };
 
 export const ticker = [
-  { type: "rsvp" as const, label: "RSVP Today", value: "", href: "https://supplier-summit-2026.vercel.app" },
-  { type: "info" as const, label: "April 22–23, 2026", value: "Hotel Dax · Envision, Dallas Campus · Cowboys Golf Club", href: "https://supplier-summit-2026.vercel.app" },
+  { type: "rsvp" as const, label: "RSVP Today", value: "", href: "https://supplier-summit-rsvp.vercel.app" },
+  { type: "info" as const, label: "April 22–23, 2026", value: "Hotel Dax · Envision, Dallas Campus · Cowboys Golf Club", href: "https://supplier-summit-rsvp.vercel.app" },
 ];
 
 export const navAnchors = {
@@ -288,12 +288,12 @@ export const navAnchors = {
   day1: [
     { label: "Speakers", href: "#d1-speakers" },
     { label: "Agenda", href: "#d1-agenda" },
-    { label: "RSVP", href: "https://supplier-summit-2026.vercel.app" },
+    { label: "RSVP", href: "https://supplier-summit-rsvp.vercel.app" },
   ],
   day2: [
     { label: "Agenda", href: "#d2-agenda" },
     { label: "Plant Tour", href: "#d2-tour" },
     { label: "Golf", href: "#d2-golf" },
-    { label: "RSVP", href: "https://supplier-summit-2026.vercel.app" },
+    { label: "RSVP", href: "https://supplier-summit-rsvp.vercel.app" },
   ],
 };
