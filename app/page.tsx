@@ -73,7 +73,7 @@ export default function Home() {
               <a className="btn-o" href="#agenda-glance" onClick={(e) => { e.preventDefault(); document.querySelector("#agenda-glance")?.scrollIntoView({ behavior: "smooth" }); }}>
                 {C.hero.ctaPrimary.label}
               </a>
-              <a className="btn-g" href="https://supplier-summit-2026.vercel.app" target="_blank" rel="noopener noreferrer">
+              <a className="btn-g" href="https://supplier-summit-rsvp.vercel.app" target="_blank" rel="noopener noreferrer">
                 RSVP
               </a>
             </div>
